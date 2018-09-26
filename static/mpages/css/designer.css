@@ -1,0 +1,81 @@
+/* title */
+.title,.designer {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #ffffff;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    margin: 0 auto;    
+}
+.title h1 {
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    font-size: .18rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+}
+.title h1 a {
+    position: absolute;
+    color: gray;
+    left: .1rem;    
+}
+/* title end */
+
+/* designer */
+.designer ul {
+    display: flex;
+    flex-direction: column;
+}
+.designer ul li {
+    width: 100%;
+    padding: .1rem;
+    padding-bottom: 0;
+}
+.designer ul li:nth-last-of-type(1) {
+    padding-bottom: .1rem;
+}
+.designer ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.designer ul li a img {
+    width: 1.38rem;
+    height: 1.675rem;
+    vertical-align: middle;
+}
+.designer ul li div {
+    background: #f0f0f0;
+    padding: .1rem;
+}
+.designer ul li div p {
+    margin-bottom: .02rem;
+}
+.designer ul li div p:nth-of-type(1) button {
+    float: right;
+    border:none;
+    outline: none;
+    background: #1d9d73;
+    color: #ffffff;
+    padding: .03rem;
+    border-radius: .03rem;
+}
+.designer ul li div p:nth-of-type(1),
+.designer ul li div p:nth-of-type(2) {
+    font-size: .15rem;
+    color: #010101;
+}
+.designer ul li div p:nth-of-type(3),
+.designer ul li div p:nth-of-type(4) {
+    font-size: .12rem;
+    color: #606060;
+}
+/* designer end */

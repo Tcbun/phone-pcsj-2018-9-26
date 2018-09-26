@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./static/mpages/css/index.css">
+    <link rel="stylesheet" href="./static/mpages/css/public.css">
+    <link rel="stylesheet" href="./static/mpages/css/swiper.min.css">
+    <link rel="stylesheet" href="./static/mpages/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="clearfix">
+            <img src="static/mpages/images/index/logo.png" alt="">
+        </a>
+    </header>
+    <!-- header end -->
+
+    <!-- swiper1 -->
+    <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="nine-years.html">
+                    <img src="static/mpages/images/index/banner.jpg" alt="">
+                </a>
+            </div>
+            <!-- <div class="swiper-slide">Slide 2</div> -->
+            <!-- <div class="swiper-slide">Slide 3</div> -->
+        </div>
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <!-- swiper1 end -->
+
+    <!-- phone-nav -->
+    <div class="phone-nav">
+        <ul class="clearfix">
+            <li>
+                <a href="case.html">
+                    <img src="./static/mpages/images/index/icon_1.png" alt="">
+                    <p>案例装修</p>
+                </a>
+            </li>
+            <li>
+                <a href="designer.html">
+                    <img src="./static/mpages/images/index/icon_2.png" alt="">
+                    <p>资深设计</p>
+                </a>
+            </li>
+            <li>
+                <a href="scene.html">
+                    <img src="./static/mpages/images/index/icon_3.png" alt="">
+                    <p>在线工地</p>
+                </a>
+            </li>
+            <li>
+                <a href="nine-years.html">
+                    <img src="./static/mpages/images/index/icon_4.png" alt="">
+                    <p>活动优惠</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- phone-nav end -->
+
+    <!-- section2 -->
+    <div class="section-2">
+        <div id="get-price">
+            <img src="./static/mpages/images/index/get-price.png" alt="">
+        </div>
+        <div id="free-design">
+            <img src="./static/mpages/images/index/free.png" alt="">
+        </div>
+    </div>
+    <!-- section2 end -->
+
+    <!-- index-form -->
+    <div class="index-form">
+        <h1>算算我家装修需要多少钱</h1>
+        <form action="">
+            <div>
+                <img src="./static/mpages/images/index/person.png" alt="">
+                <input type="text" placeholder="您的称呼" onkeyup="value=value.replace(/[^\D]/g,'')">
+            </div>
+            <p class="warn userName">姓名错误！</p>
+            <div>
+                <img src="./static/mpages/images/index/phone.png" alt="">
+                <input type="text" placeholder="您的联系方式" onkeyup="value=value.replace(/[^\d]/g,'')">
+            </div>
+            <p class="warn userPhone">手机号码错误！</p>
+            <div>
+                <img src="./static/mpages/images/index/area.png" alt="">
+                <input type="text" placeholder="请输入您的房屋面积" onkeyup="value=value.replace(/[^\d]/g,'')" id="userArea"
+                    maxlength="6">
+            </div>
+            <p class="warn userArea">房屋面积填写错误！</p>
+            <button class="yuyue" type="button">立即预约</button>
+        </form>
+    </div>
+    <!-- index-form end -->
+
+    <!-- case -->
+    <div class="case">
+        <h2>装修案例</h2>
+        <a href="">更多</a>
+        <ul class="clearfix">
+            <li><a>混搭</a></li>
+            <li><a>巴洛克</a></li>
+            <li><a>简欧</a></li>
+            <li><a>北欧</a></li>
+            <li><a>宜家</a></li>
+            <li><a>日式</a></li>
+        </ul>
+        <div class="swiper-container swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./static/mpages/images/index/swiper3.jpg" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <!-- case end -->
+
+    <!-- learn -->
+    <div class="learn">
+        <h2>学装修</h2>
+        <ul class="clearfix">
+            <li class="active">
+                <a href="">
+                    装修知识
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    装修流程
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    选购主材
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    关于设计
+                </a>
+            </li>
+        </ul>
+        <a href="article.html" class="new">
+            <h3>宁波厨房装修吧台设计让生活更加舒适</h3>
+            <ul class="clearfix">
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+            </ul>
+            <p>发布时间：<time>2018-09-15</time></p>
+        </a>
+        <a href="" class="new">
+            <h3>宁波厨房装修吧台设计让生活更加舒适</h3>
+            <ul class="clearfix">
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./static/mpages/images/index/swiper1.jpg" alt="">
+                </li>
+            </ul>
+            <p>发布时间：<time>2018-09-15</time></p>
+        </a>
+        <a href="" class="new">
+            <h3>宁波厨房装修吧台设计让生活更加舒适</h3>
+            <p>发布时间：<time>2018-09-15</time></p>
+        </a>
+    </div>
+    <!-- learn end -->
+
+    <!-- footer -->
+    <div class="footer">
+        <ul class="clearfix">
+            <li>
+                <a href="tel:13656748889">
+                    <img src="./static/mpages/images/index/footer-phone.png" alt="">
+                    <p>电话咨询</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./static/mpages/images/index/footer-money.png" alt="">
+                    <p>在线咨询</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./static/mpages/images/index/footer-message.png" alt="">
+                    <p>装修报价</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer end -->
+
+    <!-- success -->
+    <div class="success-wrap">
+        <div class="success">
+            <h3>报名成功</h3>
+            <div class="line"></div>
+            <p>恭喜您报名成功</p>
+            <p>稍后我们就会联系到您</p>
+            <div class="message">
+                <p>称呼：钱松科</p>
+                <p>联系方式：13656748889</p>
+                <p>房屋面积：120㎡</p>
+            </div>
+            <img src="./static/mpages/images/index/close.png" alt="" class="close">
+        </div>
+    </div>
+    <!-- success end-->
+
+    <!-- free design -->
+    <div class="free-design-wrap">
+        <div class="free-design">
+            <h3>免费设计立即预约</h3>
+            <h4>优质美观的设计尽在品创饰家</h4>
+            <form action="">
+                <input type="text" placeholder="您的称呼" onkeyup="value=value.replace(/[^\D]/g,'')">
+                <p class="fdWarn fdUserName">姓名错误！</p>
+                <input type="text" placeholder="您的手机号码" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <p class="fdWarn fdUserPhone">手机号码错误！</p>
+                <input type="text" placeholder="您的房屋面积" id="gp-userArea" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength="6">
+                <p class="fdWarn fdUserArea">房屋面积填写错误！</p>
+                <button id="fdSubmit" type="button">立即报价</button>
+                <img src="./static/mpages/images/index/close.png" alt="" class="close">
+            </form>
+        </div>
+    </div>
+    <!-- free design end -->
+
+    <!-- get-price -->
+    <div class="get-price-wrap">
+        <div class="get-price">
+            <h3>快速获取智能报价</h3>
+            <ul class="clearfix">
+                <li>专业</li>
+                <li>智能</li>
+                <li>快捷</li>
+                <li>方便</li>
+            </ul>
+            <form action="">
+                <input type="text" placeholder="您的称呼" onkeyup="value=value.replace(/[^\D]/g,'')">
+                <p class="gpWarn gpUserName">姓名错误！</p>
+                <input type="text" placeholder="您的手机号码" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <p class="gpWarn gpUserPhone">手机号码错误！</p>
+                <input type="text" placeholder="您的房屋面积" id="gp-userArea" onkeyup="value=value.replace(/[^\d]/g,'')"
+                    maxlength="6">
+                <p class="gpWarn gpUserArea">房屋面积填写错误！</p>
+                <button id="gpSubmit" type="button">立即报价</button>
+                <img src="./static/mpages/images/index/close.png" alt="" class="close">
+            </form>
+        </div>
+    </div>
+    <!-- get-price end -->
+
+    <script src="./static/mpages/js/swiper.min.js"></script>
+    <script src="./static/mpages/js/jquery-1.7.2.min.js"></script>
+    <script src="./static/mpages/js/index.js"></script>
+    <!-- <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script> -->
+    <script>
+        var mySwiper = new Swiper('.swiper2', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script>
+</body>
+
+</html>
