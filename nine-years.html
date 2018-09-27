@@ -21,6 +21,7 @@
 
     <!-- bg -->
     <div class="bg">
+        <a href="index.html">&lt;</a>
         <ul>
             <li>
                 <img src="./static/mpages/images/nine-years/sur1.png" alt="">
@@ -71,7 +72,7 @@
     <div class="footer">
         <ul class="clearfix">
             <li>
-                <a href="">
+                <a href="tel:13656748889">
                     <img src="./static/mpages/images/index/footer-phone.png" alt="">
                     <p>电话咨询</p>
                 </a>
@@ -83,7 +84,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a id="bottom-get-price">
                     <img src="./static/mpages/images/index/footer-message.png" alt="">
                     <p>装修报价</p>
                 </a>
@@ -108,6 +109,26 @@
         </div>
     </div>
     <!-- success end-->
+
+    <!-- free design -->
+    <div class="free-design-wrap">
+        <div class="free-design">
+            <h3>免费设计立即预约</h3>
+            <h4>优质美观的设计尽在品创饰家</h4>
+            <form action="">
+                <input type="text" placeholder="您的称呼" onkeyup="value=value.replace(/[^\D]/g,'')">
+                <p class="fdWarn fdUserName">姓名错误！</p>
+                <input type="text" placeholder="您的手机号码" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <p class="fdWarn fdUserPhone">手机号码错误！</p>
+                <input type="text" placeholder="您的房屋面积" id="gp-userArea" onkeyup="value=value.replace(/[^\d]/g,'')"
+                    maxlength="6">
+                <p class="fdWarn fdUserArea">房屋面积填写错误！</p>
+                <button id="fdSubmit" type="button">立即报价</button>
+                <img src="./static/mpages/images/index/close.png" alt="" class="close">
+            </form>
+        </div>
+    </div>
+    <!-- free design end -->
     <script src="./static/mpages/js/jquery-1.7.2.min.js"></script>
     <script src="./static/mpages/js/index.js"></script>
 </body>

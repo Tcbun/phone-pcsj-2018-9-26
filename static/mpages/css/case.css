@@ -95,10 +95,10 @@
     background: #707070;
     color: #ffffff;
 }
-.case ul:first-child li a::after {
+/* .case ul:first-child li a::after {
     content: '∨';
     font-size: .12rem;
-}
+} */
 .case-case li {
     padding-top: 0 !important;
 }
@@ -126,7 +126,7 @@
     background: #ffffff;
     position: absolute;
 }
-.close {
+.dialog .close {
     position: absolute;
     left:50%;
     top:100%;

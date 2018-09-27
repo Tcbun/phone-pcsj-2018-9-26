@@ -7,6 +7,15 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.bg a {
+    position: absolute;
+    color: gray;
+    left: .1rem;
+    font-size: .18rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
 .bg ul {
     width: 100%;
     max-width: 7.5rem;

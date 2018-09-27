@@ -99,3 +99,126 @@ header a img {
     height: .3rem;
 }
 /* footer end */
+
+/* free-design */
+.free-design-wrap {
+    position: fixed;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 999;
+    display: none;
+    margin: 0 auto;
+}
+.free-design {
+    width: 85%;
+    max-width: 7rem;
+    margin: 0 auto;
+    background-image: url(../images/index/free-design.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: .3rem .2rem .1rem .2rem;
+    border:.05rem solid rgba(29, 157, 115, .7);
+    position: absolute;
+    left:50%;
+    top:50%;
+}
+.free-design h3 {
+    font-size: .18rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: .12rem;
+    letter-spacing: .015rem;
+    font-family: '黑体', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+.free-design h4 {
+    font-size: .14rem;
+    color: #ffffff;
+    font-family: '黑体', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .08rem .12rem;
+    background: #4ed3a7;
+    border-radius: .3rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: .325rem;
+}
+.free-design input,
+.free-design button {
+    display: inherit;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    height: .3rem;
+    width: 100%;
+    padding: auto .1rem;
+    margin-bottom: .18rem;
+}
+.free-design input {
+    padding-left: .1rem;
+}
+/* .free-design input:nth-of-type(2) {
+    margin-bottom: .3rem;
+}  */
+.free-design button {
+    background: #0093dd;
+    color: #ffffff;
+    letter-spacing: .02rem;
+}
+.free-design ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #606060;
+}
+.free-design ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #606060;
+}
+.free-design ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #606060;
+}
+.free-design ::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #606060;
+}
+.free-design form * {
+    display: inherit;
+    float: left;
+}
+.free-design form input {
+    width: 100%;
+    padding: .1rem;
+    margin-right: 5%;
+    margin-bottom: .1rem;
+    border: .01rem solid #dddddd;
+    outline: none;
+}
+.free-design form button {
+    display: inherit;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    height: .3rem;
+    width: 100%;
+    padding: auto .1rem;
+    margin-bottom: .18rem;
+    background: #0093dd;
+    color: #ffffff;
+}
+.free-design-wrap .free-design .fdWarn {
+    font-size: .12rem;
+    color: red;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+    display: none;
+}
+.close {
+    position: absolute;
+    width: .25rem;
+    height: .25rem;
+    top: 0;
+    right: 0;
+}
+/* free-design end */

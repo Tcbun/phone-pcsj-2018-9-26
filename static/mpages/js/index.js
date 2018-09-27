@@ -111,6 +111,9 @@ $("#gpSubmit").click(function () {
     var userPhone = $(".get-price form input:nth-of-type(2)").val();
     var userArea = $(".get-price form input:nth-of-type(3)").val();
     var regPhone = /^1[3|4|5|7|8][0-9]{9}$/;
+    var freeHeight = $(".get-price").height();
+    var freeWidth = $(".get-price").width();
+    var count = 0;
     if (userName !== "" && (userPhone !== "" && regPhone.test(userPhone)) && userArea !== "") {
         $(".get-price-wrap").hide();
         $(".success-wrap").css("display", "block");
@@ -125,18 +128,27 @@ $("#gpSubmit").click(function () {
     } else {
         if (userName !== "") {
             $(".gpUserName").hide();
+            count = 0;
         } else {
             $(".gpUserName").show();
+            count += 16;
+            $(".get-price").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
         if (userPhone !== "" && regPhone.test(userPhone)) {
             $(".gpUserPhone").hide();
+            count = 0;
         } else {
             $(".gpUserPhone").show();
+            count += 16;
+            $(".get-price").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
         if (userArea !== "") {
             $(".gpUserArea").hide();
+            count = 0;
         } else {
             $(".gpUserArea").show();
+            count += 16;
+            $(".get-price").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
     }
 })
@@ -145,7 +157,10 @@ $("#fdSubmit").click(function () {
     var userName = $(".free-design form input:nth-of-type(1)").val();
     var userPhone = $(".free-design form input:nth-of-type(2)").val();
     var userArea = $(".free-design form input:nth-of-type(3)").val();
+    var freeHeight = $(".free-design").height();
+    var freeWidth = $(".free-design").width();
     var regPhone = /^1[3|4|5|7|8][0-9]{9}$/;
+    var count = 0;
     if (userName !== "" && (userPhone !== "" && regPhone.test(userPhone)) && userArea !== "") {
         $(".free-design-wrap").hide();
         $(".success-wrap").css("display", "block");
@@ -160,18 +175,27 @@ $("#fdSubmit").click(function () {
     } else {
         if (userName !== "") {
             $(".fdUserName").hide();
+            count = 0;
         } else {
             $(".fdUserName").show();
+            count += 16;
+            $(".free-design").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
         if (userPhone !== "" && regPhone.test(userPhone)) {
             $(".fdUserPhone").hide();
+            count = 0;
         } else {
             $(".fdUserPhone").show();
+            count += 16;
+            $(".free-design").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
         if (userArea !== "") {
             $(".fdUserArea").hide();
+            count = 0;
         } else {
             $(".fdUserArea").show();
+            count += 16;
+            $(".free-design").css("margin-top", -freeHeight / 2 - count).css("margin-left", -freeWidth / 2 - 25);
         };
     }
 })
@@ -221,7 +245,7 @@ $(".close").click(function () {
 })
 
 //免费设计弹出框
-$("#free-design").click(function () {
+$("#free-design,#bottom-get-price").click(function () {
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -238,7 +262,7 @@ $("#get-price").click(function () {
     var freeWidth = $(".get-price").width();
     var closeWidth = $(".close").width();
     var closeHeight = $(".close").height();
-    $(".get-price").css("margin-top", -freeHeight / 2).css("margin-left", -freeWidth / 2 - 25);
+    $(".get-price").css("margin-top", -freeHeight / 2 ).css("margin-left", -freeWidth / 2 - 25);
     $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
 })
 
