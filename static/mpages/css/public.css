@@ -222,3 +222,83 @@ header a img {
     right: 0;
 }
 /* free-design end */
+
+/* success */
+.success-wrap {
+    position: fixed;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 999;
+    display: none;
+}
+.success {
+    width: 85%;
+    max-width: 7rem;
+    margin: 0 auto;
+    background: #ffffff;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    border-radius: .05rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border:.05rem solid rgba(29, 157, 115, .7);
+    text-align: left;
+}
+.success h3 {
+    font-size: .18rem;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+}
+.success .line {
+    width: 1rem;
+    height: .02rem;
+    background: #1d9d73;
+    margin: 0 auto;
+    margin-top: .1rem;
+    margin-bottom: .2rem;
+}
+.success > p {
+    font-size: .14rem;
+    color: #bfbfbf;
+    text-align: center;
+}
+.message {
+    margin-top: .3rem;
+}
+.message > p {
+    font-size: .14rem;
+    padding-left: 10%;
+    margin-bottom: .1rem;
+}
+.message img {
+    width: 2.48rem;
+    height: 1.535rem;
+    float: right;
+    margin-right: 5%;
+    margin-top: -15%;
+}
+.free-design .close {
+    position: absolute;
+    width: .25rem;
+    height: .25rem;
+    top:0;
+    right: 0;
+}
+.warn {
+    font-size: .12rem;
+    color: red;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+    display: none;
+}
+.userArea {
+    margin-bottom: .25rem;
+}
+/* success end */

@@ -86,6 +86,9 @@ $(".yuyue").click(function () {
         var closeWidth = $(".close").width();
         var closeHeight = $(".close").height();
         $(".success").css("margin-left", -yuyueWidth / 2 - 5).css("margin-top", -yuyueHeight / 2 - footerHeight / 2);
+        $(".message p:nth-of-type(1) span").text($(".index-form div:nth-of-type(1) input").val());
+        $(".message p:nth-of-type(2) span").text($(".index-form div:nth-of-type(2) input").val());
+        $(".message p:nth-of-type(3) span").text($(".index-form div:nth-of-type(3) input").val());
         $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
     } else {
         if (userName !== "") {
@@ -123,7 +126,10 @@ $("#gpSubmit").click(function () {
         var footerHeight = $(".footer").height();
         var closeWidth = $(".close").width();
         var closeHeight = $(".close").height();
-        $(".success").css("margin-left", -yuyueWidth / 2 - 5).css("margin-top", -yuyueHeight / 2 - footerHeight / 2);
+        $(".success").css("margin-left", -yuyueWidth / 2 - 5).css("myuyueargin-top", -yuyueHeight / 2 - footerHeight / 2);
+        $(".message p:nth-of-type(1) span").text($(".get-price form input:nth-of-type(1)").val());
+        $(".message p:nth-of-type(2) span").text($(".get-price form input:nth-of-type(2)").val());
+        $(".message p:nth-of-type(3) span").text($(".get-price form input:nth-of-type(3)").val());
         $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
     } else {
         if (userName !== "") {
@@ -171,6 +177,9 @@ $("#fdSubmit").click(function () {
         var closeWidth = $(".close").width();
         var closeHeight = $(".close").height();
         $(".success").css("margin-left", -yuyueWidth / 2 - 5).css("margin-top", -yuyueHeight / 2 - footerHeight / 2);
+        $(".message p:nth-of-type(1) span").text($(".free-design form input:nth-of-type(1)").val());
+        $(".message p:nth-of-type(2) span").text($(".free-design form input:nth-of-type(2)").val());
+        $(".message p:nth-of-type(3) span").text($(".free-design form input:nth-of-type(3)").val());
         $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
     } else {
         if (userName !== "") {
@@ -215,6 +224,9 @@ $("#nySubmit").click(function () {
         var closeWidth = $(".close").width();
         var closeHeight = $(".close").height();
         $(".success").css("margin-left", -yuyueWidth / 2 - 5).css("margin-top", -yuyueHeight / 2 - footerHeight / 2);
+        $(".message p:nth-of-type(1) span").text($(".bg form input:nth-of-type(1)").val());
+        $(".message p:nth-of-type(2) span").text($(".bg form input:nth-of-type(2)").val());
+        $(".message p:nth-of-type(3) span").text($(".bg form input:nth-of-type(3)").val());
         $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
     } else {
         if (userName !== "") {

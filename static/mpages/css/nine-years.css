@@ -6,6 +6,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
+    position: relative;
 }
 .bg a {
     position: absolute;
