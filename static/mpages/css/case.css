@@ -33,8 +33,9 @@
 .case ul {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 .case ul li {
     text-align: center;
@@ -43,7 +44,7 @@
     padding: .1rem;
 }
 .case ul li a {
-    padding: .02rem .05rem;
+    padding: .02rem .1rem;
     background: #e0e0e0;
     border-radius: .05rem;
 }
@@ -51,6 +52,20 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+.case-case li ul:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.case-case li ul:nth-of-type(2) li {
+    width: auto;
+    padding: 5px !important;
+    margin-right: 10px;
+    background: #707070;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
 }
 .case .case-case > li {
     width: 100%;
@@ -78,7 +93,7 @@
     display: block;
 }
 .case .case-case .designer li:nth-of-type(1) {
-    width: 27%;
+    width: 33%;
     text-align: left;
     margin-left: 0;
     padding-left: 0;

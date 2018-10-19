@@ -1,3 +1,35 @@
+
+// // 下拉下载更多数据
+//     var AjaxIndex = 0;
+//     $(window).scroll(function(){
+//         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+//             $(".more-news").show();
+//             // Ajax
+//             var url = '';
+//             $.ajax({
+//                 url:url,
+//                 type:'GET',
+//                 success:function(){
+//                     // console.log("success!");
+//                     AjaxIndex++;
+//                     $(".more-news").hide();
+//                     $(".learn ul:nth-of-type(2)").append('<li><a class="new"><h3>123</h3></a><li>');
+//                 },
+//                 fail:function(){
+//                     console.log("fail!");
+//                 }
+//             })
+//         }
+//     });
+$("header button").click(function () {
+    if ($(window).width() >= 750) {
+        var dialogNav = $(".dialog-nav").width() / 2;
+        $(".dialog-nav").slideToggle().css("left", "50%").css("margin-left", -dialogNav);
+    } else {
+        $(".dialog-nav").slideToggle();
+    }
+})
+
 $(document).ready(function () {
     if ($(window).width() >= 750) {
         $(".footer").css({
@@ -257,7 +289,7 @@ $(".close").click(function () {
 })
 
 //免费设计弹出框
-$("#free-design,#bottom-get-price").click(function () {
+$("#free-design,#bottom-get-price,#ask-online").click(function () {
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -274,11 +306,11 @@ $("#get-price").click(function () {
     var freeWidth = $(".get-price").width();
     var closeWidth = $(".close").width();
     var closeHeight = $(".close").height();
-    $(".get-price").css("margin-top", -freeHeight / 2 ).css("margin-left", -freeWidth / 2 - 25);
+    $(".get-price").css("margin-top", -freeHeight / 2).css("margin-left", -freeWidth / 2 - 25);
     $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
 })
 
 //九周年点击跳转到底部表单
-$(".bg ul li img").click(function(){
-    $("html,body").animate({"scrollTop":$(document).height()})
+$(".bg ul li img").click(function () {
+    $("html,body").animate({ "scrollTop": $(document).height() })
 })

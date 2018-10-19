@@ -214,23 +214,49 @@
     content: "一";
     padding-left: .1rem;
 }
-.learn ul {
+.learn > ul:nth-of-type(1) {
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     margin-bottom: .2rem;
 }
-.learn ul li {
+.learn > ul:nth-of-type(1) li {
     width: 25%;
     display: inherit;
     text-align: center;
 }
-.learn ul li a {
+.learn > ul:nth-of-type(1) li a {
     width: 100%;
     height: 100%;
     display: inline-block;
     font-size: .15rem;
+}
+.learn > ul:nth-of-type(2) {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.learn > ul:nth-of-type(2) li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.learn button {
+    width: 90%;
+    height: 30px;
+    border: none;
+    display: inherit;
+    outline: none;
+    margin: 0 auto;
+}
+.learn button:hover {
+    background: #0093dd;
+    color: #fff;
 }
 .new {
     display: block;
@@ -250,26 +276,35 @@
 .new ul {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     margin-bottom: .1rem;
-    overflow: hidden;
 }
 .new ul > li {
-    width: 33%;
+    width: 32%;
+    height: 72px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .new ul > li img {
     width: 100%;
-    height: 100%;
 }
 .new ul > li:nth-of-type(1) {
-    margin-right: .5%;
+    margin-right: 2%;
 }
 .new ul > li:nth-of-type(2) {
-    margin-right: .5%
+    margin-right: 2%
 }
 .new p {
     font-size: .12rem;
     color: #606060;
+}
+.more-news {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #606060;
+    display: none;
 }
 /* learn end */
 
