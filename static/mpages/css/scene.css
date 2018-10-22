@@ -27,6 +27,15 @@
     color: gray;
     left: .1rem;    
 }
+.scene-list button {
+    width: 90%;
+    height: 30px;
+    border: none;
+    display: inherit;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
 /* title end */
 
 /* banner */

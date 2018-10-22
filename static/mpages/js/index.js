@@ -35,13 +35,13 @@ $(".title button").click(function () {
     if ($(window).width() >= 750) {
         var dialogNav = $(".dialog-nav").width() / 2;
         $(".dialog-nav").slideToggle().css({
-            "left":"50%",
-            "margin-left":-dialogNav
+            "left": "50%",
+            "margin-left": -dialogNav
         });
     } else {
         $(".dialog-nav").slideToggle();
         $(".dialog-nav ul").css({
-            "margin-top":"6px"
+            "margin-top": "6px"
         })
     }
 })
@@ -329,4 +329,26 @@ $("#get-price").click(function () {
 //九周年点击跳转到底部表单
 $(".bg ul li img").click(function () {
     $("html,body").animate({ "scrollTop": $(document).height() })
+})
+
+// 设计师预约
+$(".designer ul li").click(function () {
+    $(".free-design-wrap").fadeIn();
+    var freeHeight = $(".free-design").height();
+    var freeWidth = $(".free-design").width();
+    var closeWidth = $(".close").width();
+    var closeHeight = $(".close").height();
+    $(".free-design").css("margin-top", -freeHeight / 2).css("margin-left", -freeWidth / 2 - 25);
+    $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
+})
+
+// 在线工地预约
+$(".scene-list a").click(function(){
+    $(".free-design-wrap").fadeIn();
+    var freeHeight = $(".free-design").height();
+    var freeWidth = $(".free-design").width();
+    var closeWidth = $(".close").width();
+    var closeHeight = $(".close").height();
+    $(".free-design").css("margin-top", -freeHeight / 2).css("margin-left", -freeWidth / 2 - 25);
+    $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
 })

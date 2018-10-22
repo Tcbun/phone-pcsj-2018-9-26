@@ -30,6 +30,14 @@
 /* title end */
 
 /* case */
+.case button {
+    width: 90%;
+    height: 30px;
+    border: none;
+    display: inherit;
+    outline: none;
+    margin: 0 auto;
+}
 .case ul {
     width: 100%;
     display: flex;
@@ -175,6 +183,7 @@
     width: 80%;
     display: block;
     margin: 0 auto;
+    /* border: 1px solid #000000; */
 }
 .dialog .area ul:nth-of-type(1) li a::after {
     content: '∨';
