@@ -21,12 +21,28 @@
 //             })
 //         }
 //     });
+
 $("header button").click(function () {
     if ($(window).width() >= 750) {
         var dialogNav = $(".dialog-nav").width() / 2;
         $(".dialog-nav").slideToggle().css("left", "50%").css("margin-left", -dialogNav);
     } else {
         $(".dialog-nav").slideToggle();
+    }
+})
+
+$(".title button").click(function () {
+    if ($(window).width() >= 750) {
+        var dialogNav = $(".dialog-nav").width() / 2;
+        $(".dialog-nav").slideToggle().css({
+            "left":"50%",
+            "margin-left":-dialogNav
+        });
+    } else {
+        $(".dialog-nav").slideToggle();
+        $(".dialog-nav ul").css({
+            "margin-top":"6px"
+        })
     }
 })
 

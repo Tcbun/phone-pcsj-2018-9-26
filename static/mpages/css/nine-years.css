@@ -119,6 +119,32 @@
     padding-left: .1rem;
 }
 
+/* title */
+.title {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.title h1 {
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    font-size: .18rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    background: #fff;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.title h1 a {
+    position: absolute;
+    color: gray;
+    left: .1rem;    
+}
+/* title end */
+
 /* success */
 .success-wrap {
     position: fixed;

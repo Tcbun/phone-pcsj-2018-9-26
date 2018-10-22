@@ -56,6 +56,7 @@ header {
     background: #ffffff;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 header a {
     width: 5%;
@@ -80,8 +81,34 @@ header button {
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     background-clip: content-box;
+    position: absolute;
+    right: 0;
 }
 /* header end */
+
+/* title */
+.title {
+    position: relative;
+}
+.title button {
+    display: block;
+    width: 20px;
+    height: 9px;
+    background: #000;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    padding: 3px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    background-clip: content-box;
+    position: absolute;
+    top:0;
+    right: 0px;
+    margin-top: 18.5px;
+}
+/* title end */
 
 /* footer */
 .footer {
@@ -329,7 +356,7 @@ header button {
     /* background: rgba(0, 0, 0, .2); */
     z-index: 999;
     margin-top: 40px;
-    border-top: 1px solid #000;
+    /* border-top: 1px solid #000; */
     position: absolute;
     top:0;
     display: none;
@@ -342,6 +369,7 @@ header button {
     background: #fff;
     height: 105px;
     text-align: center;
+    border-top: 1px solid #443344;
 }
 .dialog-nav ul li {
     width: 20%;
