@@ -232,7 +232,10 @@
     display: inline-block;
     font-size: .15rem;
 }
-.learn > ul:nth-of-type(2) {
+.learn > ul:nth-of-type(2), 
+.learn > ul:nth-of-type(3),
+.learn > ul:nth-of-type(4),
+.learn > ul:nth-of-type(5) {
     max-width: 750px;
     margin: 0 auto;
     display: flex;
@@ -240,11 +243,19 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.learn > ul:nth-of-type(2) li {
+.learn > ul:nth-of-type(2) li,
+.learn > ul:nth-of-type(3) li,
+.learn > ul:nth-of-type(4) li,
+.learn > ul:nth-of-type(5) li {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.learn > ul:nth-of-type(3),
+.learn > ul:nth-of-type(4),
+.learn > ul:nth-of-type(5) {
+    display: none;
 }
 .learn button {
     width: 90%;

@@ -352,3 +352,28 @@ $(".scene-list a").click(function(){
     $(".free-design").css("margin-top", -freeHeight / 2).css("margin-left", -freeWidth / 2 - 25);
     $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
 })
+// 切换新闻
+$(".learn ul:nth-of-type(1) li:nth-of-type(1)").click(function(){
+    $(".learn ul:nth-of-type(2)").fadeIn();
+    $(".learn ul:nth-of-type(3)").css("display","none");
+    $(".learn ul:nth-of-type(4)").css("display","none");
+    $(".learn ul:nth-of-type(5)").css("display","none");
+})
+$(".learn ul:nth-of-type(1) li:nth-of-type(2)").click(function(){
+    $(".learn ul:nth-of-type(2)").css("display","none");
+    $(".learn ul:nth-of-type(3)").fadeIn();
+    $(".learn ul:nth-of-type(4)").css("display","none");
+    $(".learn ul:nth-of-type(5)").css("display","none");
+})
+$(".learn ul:nth-of-type(1) li:nth-of-type(3)").click(function(){
+    $(".learn ul:nth-of-type(2)").css("display","none");
+    $(".learn ul:nth-of-type(3)").css("display","none");
+    $(".learn ul:nth-of-type(4)").fadeIn();
+    $(".learn ul:nth-of-type(5)").css("display","none");
+})
+$(".learn ul:nth-of-type(1) li:nth-of-type(4)").click(function(){
+    $(".learn ul:nth-of-type(2)").css("display","none");
+    $(".learn ul:nth-of-type(3)").css("display","none");
+    $(".learn ul:nth-of-type(4)").css("display","none");
+    $(".learn ul:nth-of-type(5)").fadeIn();
+})
