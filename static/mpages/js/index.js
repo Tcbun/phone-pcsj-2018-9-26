@@ -332,7 +332,7 @@ $(".bg ul li img").click(function () {
 })
 
 // 设计师预约
-$(".designer ul li").click(function () {
+$(".designer ul li div p:nth-of-type(1) button").click(function () {
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -343,7 +343,7 @@ $(".designer ul li").click(function () {
 })
 
 // 在线工地预约
-$(".scene-list a").click(function(){
+$(".intro .top button").click(function(){
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -376,4 +376,17 @@ $(".learn ul:nth-of-type(1) li:nth-of-type(4)").click(function(){
     $(".learn ul:nth-of-type(3)").css("display","none");
     $(".learn ul:nth-of-type(4)").css("display","none");
     $(".learn ul:nth-of-type(5)").fadeIn();
+})
+// 设计师作品和信息切换
+$(".toggle_button button:nth-of-type(1)").click(function(){
+    $(".toggle_button button").removeClass("toggle_active");
+    $(this).addClass("toggle_active");
+    $(".case").fadeIn();
+    $(".infor").hide();
+})
+$(".toggle_button button:nth-of-type(2)").click(function(){
+    $(".toggle_button button").removeClass("toggle_active");
+    $(this).addClass("toggle_active");
+    $(".case").hide();
+    $(".infor").fadeIn();
 })

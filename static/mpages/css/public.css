@@ -415,6 +415,9 @@ header button {
     color: #666666;
     padding: 0 3px;
 }
+.adress ul li:last-child::after {
+    content: none;
+}
 .adress p:nth-of-type(1) {
     margin-bottom: 5px;
 }

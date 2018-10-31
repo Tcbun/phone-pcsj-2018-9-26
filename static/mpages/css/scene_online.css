@@ -1,0 +1,115 @@
+/* title */
+.title,.designer {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #ffffff;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    margin: 0 auto;    
+}
+.title h1 {
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    font-size: .18rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+}
+.title h1 a {
+    position: absolute;
+    color: gray;
+    left: .1rem;    
+}
+/* title end */
+
+/* banner */
+.banner img {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    display: block;
+}
+/* banner end */
+
+/* intro */
+.intro {
+    max-width: 7.5rem;
+    background: #fff;
+    margin: 0 auto;
+    font-family: '黑体','Times New Roman', Times, serif;
+    font-size: .15rem;
+    margin-bottom: .15rem;
+}
+.intro .top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: .15rem;
+    padding-right: .15rem;
+    padding-top: .15rem;
+}
+.intro .top h5 {
+    font-size: .16rem;
+}
+.intro .top button {
+    background: #1d9d73;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .02rem .1rem;
+    border-radius: 5px;
+}
+.intro .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .15rem;
+    padding-right: .15rem;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    color: #606060;
+}
+.intro .bottom p {
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* process */
+.process {
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+}
+.process ul li {
+    padding: .15rem;
+}
+.process ul li h5 {
+    font-family: '黑体','Times New Roman', Times, serif;
+    font-size: .16rem;
+    letter-spacing: .01rem;
+    font-style: initial;
+    margin-bottom: .15rem;
+}
+.process ul li h5::before {
+    content:'{';
+    color: #1d9d73;
+}
+.process ul li h5::after {
+    content:'}';
+    color: #1d9d73;
+}
+.process ul li img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .15rem;
+}

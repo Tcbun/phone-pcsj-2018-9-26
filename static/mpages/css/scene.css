@@ -49,15 +49,22 @@
 
 /* scene-list */
 .scene-list {
-    display: flex;
-    flex-wrap: wrap;
     padding: .1rem;
     width: 100%;
     max-width: 7.5rem;
     margin: 0 auto;
 }
+.scene-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.scene-list ul li {
+    width:48%;
+    display: inherit;
+}
 .scene-list a {
-    width: 48%;
     margin-right: 4%;
     display: inline-block;
     margin-bottom: .1rem;
@@ -87,6 +94,9 @@
     color: #ffffff;
     border-radius: .05rem;
     padding: .02rem;
+    font-size: .12rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
 }
 .item p:nth-of-type(odd) {
     float: left;
