@@ -173,19 +173,23 @@
     padding: .1rem;
     font-size: .15rem;
 }
-.swiper2 {
+.show {
+    display: block !important;
+}
+.none {
     width: 90%;
     max-width: 7.5rem;
     margin: 0 auto;
     background: #ffffff;
     padding-top: .1rem;
     padding-bottom: .1rem;
+    display: none;
 }
-.swiper2 .swiper-wrapper .swiper-slide {
+.none .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: start;
 }
-.swiper2 .swiper-wrapper .swiper-slide img {
+.none .swiper-wrapper .swiper-slide img {
     width: 1.395rem;
     height: 1.115rem;
 }

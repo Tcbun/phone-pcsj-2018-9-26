@@ -63,12 +63,17 @@
 .scene-list ul li {
     width:48%;
     display: inherit;
+    margin-right: 4%;
+}
+.scene-list ul li:nth-of-type(2n+2) {
+    margin-right: 0;
 }
 .scene-list a {
-    margin-right: 4%;
-    display: inline-block;
     margin-bottom: .1rem;
     background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .scene-list a:nth-of-type(2n+2) {
     margin-right: 0%;
@@ -77,6 +82,30 @@
     width: 100%;
     display: block;
     margin-bottom: .1rem;
+}
+.item p:nth-of-type(1) {
+    width: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item p:nth-of-type(3) {
+    width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item p:nth-of-type(4) {
+    width: 74px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item p:nth-of-type(5) {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .item p {
     float: left;

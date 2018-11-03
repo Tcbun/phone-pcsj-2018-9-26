@@ -9,7 +9,7 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 .title h1 {
     border-top:1px solid #dddddd;
@@ -41,7 +41,8 @@
 .case ul {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
@@ -49,17 +50,28 @@
     text-align: center;
     font-size: .14rem;
     width: 20%;
-    padding: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: .1rem; */
 }
-.case ul li a {
-    padding: .02rem .1rem;
-    background: #e0e0e0;
-    border-radius: .05rem;
+.case .choice-btn li a {
+    padding: .03rem 0rem;
+    /* background: #e0e0e0; */
+    /* border-radius: .05rem; */
+    display: block;
+    width: 90%;
+    border: 1px solid #dddddd;
+}
+.case .choice-btn li a:last-child {
+    margin-right: 0;
 }
 .case-case {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    padding-left: .15rem;
+    padding-right: .15rem;
 }
 .case-case li ul:nth-of-type(2) {
     display: flex;
@@ -78,7 +90,7 @@
 .case .case-case > li {
     width: 100%;
 }
-.case .case-case > li > img {
+.case .case-case  li  img {
     width: 100%;
 }
 .case .case-case h3 {
@@ -101,7 +113,6 @@
     display: block;
 }
 .case .case-case .designer li:nth-of-type(1) {
-    width: 33%;
     text-align: left;
     margin-left: 0;
     padding-left: 0;
@@ -129,6 +140,9 @@
     padding-top: .075rem;
     padding-bottom: .075rem;
 }
+.first {
+    display: flex !important;
+}
 /* case end */
 
 /* dialog */
@@ -155,13 +169,13 @@
     top:100%;
     font-size: .14rem;
     border: 1px solid #f0f0f0;
-    border-radius: .05rem;
-    background: #e0e0e0;
+    background: #ffffff;
     width: .4rem;
     height: .2rem;
     text-align: center;
     line-height: .2rem;
     cursor: pointer;
+    color: gray;
 }
 .dialog .area ul:nth-of-type(1) {
     display: flex;
@@ -176,44 +190,55 @@
 }
 .dialog .area ul:nth-of-type(1) li a {
     font-size: .14rem;
-    background: #e0e0e0;
-    color: #000000;
-    padding: .05rem;
-    border-radius: .05rem;
-    width: 80%;
+    /* background: #e0e0e0; */
+    color: gray;
+    /* padding: .05rem; */
+    /* border-radius: .05rem; */
+    width: 90%;
     display: block;
     margin: 0 auto;
-    /* border: 1px solid #000000; */
+    border: 1px solid #dddddd;
+    padding: .05rem;
 }
 .dialog .area ul:nth-of-type(1) li a::after {
     content: '∨';
 }
 .active {
-    color: #1d9d73 !important;
+    color:#ffffff !important;
+    background: #1d9d73 !important;
 }
 .active::after {
     content: '∧' !important;
 }
 .dialog .area ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
+    display: none;
 }
-.dialog .area ul:nth-of-type(2) li {
-    width: 25%;
+.dialog .area ul:nth-of-type(2) li,
+.dialog .area ul:nth-of-type(3) li,
+.dialog .area ul:nth-of-type(4) li,
+.dialog .area ul:nth-of-type(5) li,
+.dialog .area ul:nth-of-type(6) li {
+    width: 33.3%;
     display: inherit;
     margin-bottom: .1rem;
 }
-.dialog .area ul:nth-of-type(2) li a {
+.dialog .area ul:nth-of-type(2) li a,
+.dialog .area ul:nth-of-type(3) li a,
+.dialog .area ul:nth-of-type(4) li a,
+.dialog .area ul:nth-of-type(5) li a,
+.dialog .area ul:nth-of-type(6) li a {
     font-size: .14rem;
-    background: #e0e0e0;
-    color: #000000;
+    color: gray;
     padding: .05rem;
-    border-radius: .05rem;
-    width: 80%;
+    width: 90%;
     display: block;
     margin: 0 auto;
+    padding: .05rem;
+    border: 1px solid #dddddd;
 }
 .dialog .area ul:nth-of-type(2) li:nth-last-of-type(1),
 .dialog .area ul:nth-of-type(2) li:nth-last-of-type(2) {

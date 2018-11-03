@@ -119,6 +119,214 @@ $("#ny-userArea").on("keyup", function () {
     $(this).val(AreaString);
 })
 
+// 隐藏dialog
+$(".dialog").click(function (event) {
+    if (event.target.nodeName === 'DIV') {
+        $(this).fadeOut();
+    }
+})
+//dialog弹框选择
+$(".dialog .area ul:nth-of-type(1) li a").click(function () {
+    $(".dialog .area ul:nth-of-type(1) li a").removeClass('active');
+    $(this).addClass('active');
+    console.log($(this));
+})
+// dialog地区切换
+$(".dialog .area ul:nth-of-type(1) li:nth-of-type(1) a").click(function () {
+    $(".dialog .area ul").removeClass('first');
+    $(".dialog .area ul:nth-of-type(2)").addClass('first');
+})
+$(".dialog .area ul:nth-of-type(1) li:nth-of-type(2) a").click(function () {
+    $(".dialog .area ul").removeClass('first');
+    $(".dialog .area ul:nth-of-type(3)").addClass('first');
+})
+$(".dialog .area ul:nth-of-type(1) li:nth-of-type(3) a").click(function () {
+    $(".dialog .area ul").removeClass('first');
+    $(".dialog .area ul:nth-of-type(4)").addClass('first');
+})
+$(".dialog .area ul:nth-of-type(1) li:nth-of-type(4) a").click(function () {
+    $(".dialog .area ul").removeClass('first');
+    $(".dialog .area ul:nth-of-type(5)").addClass('first');
+})
+$(".dialog .area ul:nth-of-type(1) li:nth-of-type(5) a").click(function () {
+    $(".dialog .area ul").removeClass('first');
+    $(".dialog .area ul:nth-of-type(6)").addClass('first');
+})
+//swiper列表切换
+$(".case ul:nth-of-type(1) li").click(function () {
+    var liIndex = $(this).index();
+    // console.log(liIndex);
+    if (liIndex === 0) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        // $(".case ul:nth-of-type(2)").addClass("show");
+        $(".none").eq(0).addClass("show");
+        var mySwiper = new Swiper('.swiper2', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    } else if (liIndex === 1) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        $(".none").eq(1).addClass("show");
+        var mySwiper = new Swiper('.swiper3', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    } else if (liIndex === 2) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        $(".none").eq(2).addClass("show");
+        var mySwiper = new Swiper('.swiper4', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    } else if (liIndex === 3) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        $(".none").eq(3).addClass("show");
+        var mySwiper = new Swiper('.swiper5', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    } else if (liIndex === 4) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        $(".none").eq(4).addClass("show");
+        var mySwiper = new Swiper('.swiper6', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    } else if (liIndex === 5) {
+        $(".case ul:nth-of-type(1) li a").css("color", "#000000");
+        $(this).find('a').css("color", "green");
+        $(".none").removeClass("show");
+        $(".none").eq(5).addClass("show");
+        var mySwiper = new Swiper('.swiper7', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 40,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    }
+})
 //预约成功弹出框
 $(".yuyue").click(function () {
     var userName = $(".index-form div:nth-of-type(1) input").val();
@@ -343,7 +551,7 @@ $(".designer ul li div p:nth-of-type(1) button").click(function () {
 })
 
 // 在线工地预约
-$(".intro .top button").click(function(){
+$(".intro .top button").click(function () {
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -353,38 +561,38 @@ $(".intro .top button").click(function(){
     $(".close").css("margin-right", -closeWidth / 2).css("margin-top", -closeHeight / 2);
 })
 // 切换新闻
-$(".learn ul:nth-of-type(1) li:nth-of-type(1)").click(function(){
+$(".learn ul:nth-of-type(1) li:nth-of-type(1)").click(function () {
     $(".learn ul:nth-of-type(2)").fadeIn();
-    $(".learn ul:nth-of-type(3)").css("display","none");
-    $(".learn ul:nth-of-type(4)").css("display","none");
-    $(".learn ul:nth-of-type(5)").css("display","none");
+    $(".learn ul:nth-of-type(3)").css("display", "none");
+    $(".learn ul:nth-of-type(4)").css("display", "none");
+    $(".learn ul:nth-of-type(5)").css("display", "none");
 })
-$(".learn ul:nth-of-type(1) li:nth-of-type(2)").click(function(){
-    $(".learn ul:nth-of-type(2)").css("display","none");
+$(".learn ul:nth-of-type(1) li:nth-of-type(2)").click(function () {
+    $(".learn ul:nth-of-type(2)").css("display", "none");
     $(".learn ul:nth-of-type(3)").fadeIn();
-    $(".learn ul:nth-of-type(4)").css("display","none");
-    $(".learn ul:nth-of-type(5)").css("display","none");
+    $(".learn ul:nth-of-type(4)").css("display", "none");
+    $(".learn ul:nth-of-type(5)").css("display", "none");
 })
-$(".learn ul:nth-of-type(1) li:nth-of-type(3)").click(function(){
-    $(".learn ul:nth-of-type(2)").css("display","none");
-    $(".learn ul:nth-of-type(3)").css("display","none");
+$(".learn ul:nth-of-type(1) li:nth-of-type(3)").click(function () {
+    $(".learn ul:nth-of-type(2)").css("display", "none");
+    $(".learn ul:nth-of-type(3)").css("display", "none");
     $(".learn ul:nth-of-type(4)").fadeIn();
-    $(".learn ul:nth-of-type(5)").css("display","none");
+    $(".learn ul:nth-of-type(5)").css("display", "none");
 })
-$(".learn ul:nth-of-type(1) li:nth-of-type(4)").click(function(){
-    $(".learn ul:nth-of-type(2)").css("display","none");
-    $(".learn ul:nth-of-type(3)").css("display","none");
-    $(".learn ul:nth-of-type(4)").css("display","none");
+$(".learn ul:nth-of-type(1) li:nth-of-type(4)").click(function () {
+    $(".learn ul:nth-of-type(2)").css("display", "none");
+    $(".learn ul:nth-of-type(3)").css("display", "none");
+    $(".learn ul:nth-of-type(4)").css("display", "none");
     $(".learn ul:nth-of-type(5)").fadeIn();
 })
 // 设计师作品和信息切换
-$(".toggle_button button:nth-of-type(1)").click(function(){
+$(".toggle_button button:nth-of-type(1)").click(function () {
     $(".toggle_button button").removeClass("toggle_active");
     $(this).addClass("toggle_active");
     $(".case").fadeIn();
     $(".infor").hide();
 })
-$(".toggle_button button:nth-of-type(2)").click(function(){
+$(".toggle_button button:nth-of-type(2)").click(function () {
     $(".toggle_button button").removeClass("toggle_active");
     $(this).addClass("toggle_active");
     $(".case").hide();
