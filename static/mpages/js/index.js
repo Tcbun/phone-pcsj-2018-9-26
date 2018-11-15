@@ -566,24 +566,40 @@ $(".learn ul:nth-of-type(1) li:nth-of-type(1)").click(function () {
     $(".learn ul:nth-of-type(3)").css("display", "none");
     $(".learn ul:nth-of-type(4)").css("display", "none");
     $(".learn ul:nth-of-type(5)").css("display", "none");
+    $('.learn button').addClass('hd');
+    $('.index-findMore').removeClass('hd');
+    $('.learn ul:nth-of-type(1) li').removeClass('active')
+    $(this).addClass('active')
 })
 $(".learn ul:nth-of-type(1) li:nth-of-type(2)").click(function () {
     $(".learn ul:nth-of-type(2)").css("display", "none");
     $(".learn ul:nth-of-type(3)").fadeIn();
     $(".learn ul:nth-of-type(4)").css("display", "none");
     $(".learn ul:nth-of-type(5)").css("display", "none");
+    $('.learn button').addClass('hd');
+    $('.index-findMore2').removeClass('hd');
+    $('.learn ul:nth-of-type(1) li').removeClass('active')
+    $(this).addClass('active')
 })
 $(".learn ul:nth-of-type(1) li:nth-of-type(3)").click(function () {
     $(".learn ul:nth-of-type(2)").css("display", "none");
     $(".learn ul:nth-of-type(3)").css("display", "none");
     $(".learn ul:nth-of-type(4)").fadeIn();
     $(".learn ul:nth-of-type(5)").css("display", "none");
+    $('.learn button').addClass('hd');
+    $('.index-findMore3').removeClass('hd');
+    $('.learn ul:nth-of-type(1) li').removeClass('active')
+    $(this).addClass('active')
 })
 $(".learn ul:nth-of-type(1) li:nth-of-type(4)").click(function () {
     $(".learn ul:nth-of-type(2)").css("display", "none");
     $(".learn ul:nth-of-type(3)").css("display", "none");
     $(".learn ul:nth-of-type(4)").css("display", "none");
     $(".learn ul:nth-of-type(5)").fadeIn();
+    $('.learn button').addClass('hd');
+    $('.index-findMore4').removeClass('hd');
+    $('.learn ul:nth-of-type(1) li').removeClass('active')
+    $(this).addClass('active')
 })
 // 设计师作品和信息切换
 $(".toggle_button button:nth-of-type(1)").click(function () {
@@ -597,4 +613,31 @@ $(".toggle_button button:nth-of-type(2)").click(function () {
     $(this).addClass("toggle_active");
     $(".case").hide();
     $(".infor").fadeIn();
+})
+
+// 点击加载更多
+var numLi = 0;
+$(".index-findMore").click(function(){
+    numLi++;
+    $('#ul-1').append('<li>123</li>');
+    $('.learn button').addClass('hd');
+    $(this).removeClass('hd');
+})
+$(".index-findMore2").click(function(){
+    numLi++;
+    $('#ul-2').append('<li>123</li>');
+    $('.learn button').addClass('hd');
+    $(this).removeClass('hd');
+})
+$(".index-findMore3").click(function(){
+    numLi++;
+    $('#ul-3').append('<li>123</li>');
+    $('.learn button').addClass('hd');
+    $(this).removeClass('hd');
+})
+$(".index-findMore4").click(function(){
+    numLi++;
+    $('#ul-4').append('<li>123</li>');
+    $('.learn button').addClass('hd');
+    $(this).removeClass('hd');
 })
