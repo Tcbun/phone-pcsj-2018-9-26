@@ -334,6 +334,27 @@ $(".yuyue").click(function () {
     var userArea = $(".index-form div:nth-of-type(3) input").val();
     var regPhone = /^1[3|4|5|7|8][0-9]{9}$/;
     if (userName !== "" && (userPhone !== "" && regPhone.test(userPhone)) && userArea !== "") {
+        var mj = parseFloat(userArea);
+        //-----ajax start
+        //来源
+        var source = window.location.href;
+        var AjaxUrl = SCOPE.loadAjax_url;
+        var category_val = 2; //免费报价
+        //这里请求接口
+        $.ajax({
+            url: AjaxUrl + "?" + new Date().getTime(),
+            // data: { name:1},
+            data: { name: userName, tel: userPhone, area: mj, source: source, category_val: category_val },
+            type: 'post',
+            success: function (res) {
+                if (res == 'SUCC') {
+                    // $("#name").val('');
+                    // $("#tel").val('');
+                    // alert('申请成功');
+                }
+            }
+        });
+        //-----ajax end
         $(".success-wrap").css("display", "block");
         $(".userName, .userPhone, .userArea").hide();
         var yuyueWidth = $(".success").width();
@@ -374,6 +395,30 @@ $("#gpSubmit").click(function () {
     var freeWidth = $(".get-price").width();
     var count = 0;
     if (userName !== "" && (userPhone !== "" && regPhone.test(userPhone)) && userArea !== "") {
+        var mj = parseFloat(userArea);
+        //-----ajax start
+        //来源
+        var source = window.location.href;
+        var AjaxUrl = SCOPE.loadAjax_url;
+        var category_val = 2; //免费报价
+        //这里请求接口
+        $.ajax({
+            url: AjaxUrl + "?" + new Date().getTime(),
+            // data: { name:1},
+            data: { name: userName, tel: userPhone, area: mj, source: source, category_val: category_val },
+            type: 'post',
+            success: function (res) {
+                if (res == 'SUCC') {
+                    $(".get-price form input:nth-of-type(1)").val('');
+                    $(".get-price form input:nth-of-type(2)").val('');
+                    $(".get-price form input:nth-of-type(3)").val('');
+                    // $("#tel").val('');
+                    // alert('申请成功');
+                }
+            }
+        });
+        //-----ajax end
+
         $(".get-price-wrap").hide();
         $(".success-wrap").css("display", "block");
         $(".gpUserName, .gpUserPhone, .gpUserArea").hide();
@@ -424,6 +469,30 @@ $("#fdSubmit").click(function () {
     var regPhone = /^1[3|4|5|7|8][0-9]{9}$/;
     var count = 0;
     if (userName !== "" && (userPhone !== "" && regPhone.test(userPhone)) && userArea !== "") {
+        var mj = parseFloat(userArea);
+        //-----ajax start
+        //来源
+        var source = window.location.href;
+        var AjaxUrl = SCOPE.loadAjax_url;
+        var category_val = 1; //免费设计
+        //这里请求接口
+        $.ajax({
+            url: AjaxUrl + "?" + new Date().getTime(),
+            // data: { name:1},
+            data: { name: userName, tel: userPhone, area: mj, source: source, category_val: category_val },
+            type: 'post',
+            success: function (res) {
+                if (res == 'SUCC') {
+
+                    $(".free-design form input:nth-of-type(1)").val('');
+                    $(".free-design form input:nth-of-type(2)").val('');
+                    $(".free-design form input:nth-of-type(3)").val('');
+                    // alert('申请成功');
+                }
+            }
+        });
+        //-----ajax end
+
         $(".free-design-wrap").hide();
         $(".success-wrap").css("display", "block");
         $(".fdUserName, .fdUserPhone, .fdUserArea").hide();
@@ -513,7 +582,7 @@ $(".close").click(function () {
 })
 
 //免费设计弹出框
-$("#free-design,#bottom-get-price,#ask-online").click(function () {
+$("#free-design,#bottom-get-price,#ask-online,.person button").click(function () {
     $(".free-design-wrap").fadeIn();
     var freeHeight = $(".free-design").height();
     var freeWidth = $(".free-design").width();
@@ -617,27 +686,174 @@ $(".toggle_button button:nth-of-type(2)").click(function () {
 
 // 点击加载更多
 var numLi = 0;
-$(".index-findMore").click(function(){
+var numLi2 = 0;
+var numLi3 = 0;
+var numLi4 = 0;
+$(".index-findMore").click(function () {
     numLi++;
-    $('#ul-1').append('<li>123</li>');
-    $('.learn button').addClass('hd');
-    $(this).removeClass('hd');
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { category_id: 1, page: numLi },
+        type: 'post',
+        success: function (res) {
+            if(res == 'NONE'){
+                // alert('123');
+                $(".index-findMore").html("人家也是有底线的");
+            }else{
+                $('#ul-1').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
+
+    
 })
-$(".index-findMore2").click(function(){
-    numLi++;
-    $('#ul-2').append('<li>123</li>');
-    $('.learn button').addClass('hd');
-    $(this).removeClass('hd');
+$(".index-findMore2").click(function () {
+    numLi2++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { category_id: 2, page: numLi2 },
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('123');
+                $(".index-findMore2").html("人家也是有底线的");
+            } else {
+                $('#ul-2').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
 })
-$(".index-findMore3").click(function(){
-    numLi++;
-    $('#ul-3').append('<li>123</li>');
-    $('.learn button').addClass('hd');
-    $(this).removeClass('hd');
+$(".index-findMore3").click(function () {
+    numLi3++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { category_id: 3, page: numLi3 },
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('123');
+                $(".index-findMore3").html("人家也是有底线的");
+            } else {
+                $('#ul-3').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
 })
-$(".index-findMore4").click(function(){
-    numLi++;
-    $('#ul-4').append('<li>123</li>');
-    $('.learn button').addClass('hd');
-    $(this).removeClass('hd');
+$(".index-findMore4").click(function () {
+    numLi4++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { category_id: 4, page: numLi4 },
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('124');
+                $(".index-findMore4").html("人家也是有底线的");
+            } else {
+                $('#ul-4').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
+})
+// $(".index-findMore4").click(function () {
+//     numLi++;
+//     $('#ul-4').append('<li>123</li>');
+//     $('.learn button').addClass('hd');
+//     $(this).removeClass('hd');
+// })
+
+
+// 案例列表 加载更多
+var anliNum = 0;
+$("#AnlifindMore").click(function () {
+    anliNum++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    var source = window.location.href;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { page: anliNum, source: source },
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('124');
+                $("#AnlifindMore").html("人家也是有底线的");
+            } else {
+                // alert(res);
+                $('#caseList').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
+})
+// 设计师列表加载更多
+var shejiNum = 0;
+$("#ShejifindMore").click(function () {
+    shejiNum++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { page: shejiNum},
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('124');
+                $("#ShejifindMore").html("人家也是有底线的");
+            } else {
+                // alert(res);
+                $('#shejiList').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
+})
+
+// 工地列表加载更多
+var GdNum = 0;
+$("#GdfindMore").click(function () {
+    GdNum++;
+    var AjaxUrl = INDEX_SCOPE.loadAjax_url;
+    //这里请求接口
+    $.ajax({
+        url: AjaxUrl + "?" + new Date().getTime(),
+        // data: { name:1},
+        data: { page: GdNum },
+        type: 'post',
+        success: function (res) {
+            if (res == 'NONE') {
+                // alert('124');
+                $("#GdfindMore").html("人家也是有底线的");
+            } else {
+                // alert(res);
+                $('#GdList').append(res);
+            }
+
+        }
+    });
+    //-----ajax end
 })

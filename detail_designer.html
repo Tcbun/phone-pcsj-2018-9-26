@@ -11,6 +11,27 @@
 </head>
 
 <body>
+
+    <!-- free design -->
+    <div class="free-design-wrap">
+        <div class="free-design">
+            <h3>免费设计立即预约</h3>
+            <h4>优质美观的设计尽在品创饰家</h4>
+            <form action="">
+                <input type="text" placeholder="您的称呼" onkeyup="value=value.replace(/[^\D]/g,'')">
+                <p class="fdWarn fdUserName">姓名错误！</p>
+                <input type="text" placeholder="您的手机号码" onkeyup="value=value.replace(/[^\d]/g,'')">
+                <p class="fdWarn fdUserPhone">手机号码错误！</p>
+                <input type="text" placeholder="您的房屋面积" id="gp-userArea" onkeyup="value=value.replace(/[^\d]/g,'')"
+                    maxlength="6">
+                <p class="fdWarn fdUserArea">房屋面积填写错误！</p>
+                <button id="fdSubmit" type="button">立即报价</button>
+                <img src="./static/mpages/images/index/close.png" alt="" class="close">
+            </form>
+        </div>
+    </div>
+    <!-- free design end -->
+
     <!-- dialog -->
     <div class="dialog-nav">
         <ul>

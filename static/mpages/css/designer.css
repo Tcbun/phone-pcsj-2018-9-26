@@ -79,3 +79,16 @@
     color: #606060;
 }
 /* designer end */
+
+#ShejifindMore {
+    width: 90%;
+    height: 30px;
+    border: none;
+    display: inherit;
+    outline: none;
+    margin: 0 auto;
+}
+#ShejifindMore:hover {
+    background: #0093dd;
+    color: #fff;
+}

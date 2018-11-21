@@ -56,7 +56,7 @@
     margin: 0 auto;
     margin-top: .1rem;
     width: .5rem;
-    height: .2rem;
+    height: .3rem;
     background: #1d9d73;
     border: none;
     outline: none;
@@ -128,13 +128,16 @@
 }
 .case ul li a {
     padding: .02rem .1rem;
-    background: #e0e0e0;
+    /* background: #e0e0e0; */
     border-radius: .05rem;
 }
 .case-case {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+.case-case img {
+    width: 100% !important;
 }
 .case-case li ul:nth-of-type(2) {
     display: flex;
@@ -149,6 +152,7 @@
     color: #fff;
     border-radius: 5px;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 .case .case-case > li {
     width: 100%;
