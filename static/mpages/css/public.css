@@ -403,18 +403,19 @@ header button {
 }
 .adress ul li {
     margin: 0 3px;
+    min-width: 15%;
 }
 .adress ul li p:nth-of-type(1) {
     margin-bottom: 5px;
 }
-.adress ul li::after {
+/* .adress ul li::after {
     content:'';
     border-right: 1px solid #666666;
     margin-top: 3px;
     margin-bottom: 3px;
     color: #666666;
     padding: 0 3px;
-}
+} */
 .adress ul li:last-child::after {
     content: none;
 }
